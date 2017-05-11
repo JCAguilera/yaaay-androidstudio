@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.juankyapps.yaaay">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/YAAAY"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.juankyapps.yaaay.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.juankyapps.yaaay.Config"
+            android:label="Configuracion de YAAAY!"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juankyapps.yaaay.AcercaDe"
+            android:label="@string/title_activity_acerca_de"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
